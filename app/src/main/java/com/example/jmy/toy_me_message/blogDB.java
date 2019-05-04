@@ -51,7 +51,7 @@ public class blogDB extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getReadableDatabase();
 //        Cursor cursor = db.query("blogtable", (String[])null, (String)null, (String[])null, (String)null, (String)null, (String)null);
 //        return cursor;
-        String selectSQL = "select * from blogtable";
+        String selectSQL = "select * from blogtable order by _id desc";
         Cursor cursor = db.rawQuery(selectSQL,null);
         while (cursor.moveToNext()){
             blog = new Blog();

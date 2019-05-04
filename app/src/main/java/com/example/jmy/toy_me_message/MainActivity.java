@@ -231,6 +231,21 @@ public class MainActivity extends AppCompatActivity
 
     }
 
+    @Override
+    public boolean onPrepareOptionsMenu(Menu menu) {
+        menu.findItem(R.id.action_settings).setOnMenuItemClickListener
+                (new MenuItem.OnMenuItemClickListener() {
+                    @Override
+                    public boolean onMenuItemClick(MenuItem item) {
+                        Intent intent = new Intent(MainActivity.this ,
+                                Edittiezi2Activity.class);
+                        startActivity(intent);
+                        return true;
+                    }
+                });
+        return super.onPrepareOptionsMenu(menu);
+    }
+
 
     public void onFragmentInteraction(Uri uri) {
         Log.e("Debug", "-------------10");

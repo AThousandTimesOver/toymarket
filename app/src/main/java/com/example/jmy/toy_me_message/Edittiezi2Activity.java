@@ -100,7 +100,7 @@ public class Edittiezi2Activity extends AppCompatActivity{
                 blogDB.create();
 //                blogDB.deleteall();
 //                blogDB.delete(2);
-                blogDB.insert(index,title.getText().toString(),year+"年"+month+"月"+day+"日","玩具女孩",context.getText().toString());
+//                blogDB.insert(index,title.getText().toString(),year+"年"+month+"月"+day+"日","玩具女孩",context.getText().toString());
                 blogDB.select();
 
                 Intent intent = new Intent();

@@ -61,8 +61,17 @@ public class shoucang extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
                 Intent intent = new Intent();
-                intent.setClass(shoucang.this, TieziActivity.class);
-                startActivity(intent);
+                if(blogs.size()-arg2==1) {
+                    intent.setClass(shoucang.this, TieziActivity.class);
+                    startActivity(intent);
+                }
+                else {
+                    Blog b = blogs.get(arg2);
+                    intent.setClass(shoucang.this, Tiezi2Activity.class);
+                    intent.putExtra("b", b);
+                    startActivity(intent);
+                    // Log.e("1",""+arg2+","+arg3);
+                }
             }
         });
 

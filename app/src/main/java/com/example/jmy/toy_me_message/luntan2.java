@@ -67,11 +67,17 @@ public class luntan2 extends AppCompatActivity
             @Override
             public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,long arg3) {
                 Intent intent = new Intent();
-                Blog b = blogs.get(arg2);
-                intent.setClass(luntan2.this, TieziActivity.class);
-                intent.putExtra("b", b);
-                startActivity(intent);
-               // Log.e("1",""+arg2+","+arg3);
+                if(blogs.size()-arg2==1) {
+                    intent.setClass(luntan2.this, TieziActivity.class);
+                    startActivity(intent);
+                }
+                else {
+                    Blog b = blogs.get(arg2);
+                    intent.setClass(luntan2.this, Tiezi2Activity.class);
+                    intent.putExtra("b", b);
+                    startActivity(intent);
+                    // Log.e("1",""+arg2+","+arg3);
+                }
 
             }
         });
@@ -238,5 +244,20 @@ public class luntan2 extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    @Override
+    public boolean onPrepareOptionsMenu(Menu menu) {
+        menu.findItem(R.id.action_settings).setOnMenuItemClickListener
+                (new MenuItem.OnMenuItemClickListener() {
+                    @Override
+                    public boolean onMenuItemClick(MenuItem item) {
+                        Intent intent = new Intent(luntan2.this ,
+                                Edittiezi2Activity.class);
+                        startActivity(intent);
+                        return true;
+                    }
+                });
+        return super.onPrepareOptionsMenu(menu);
     }
 }

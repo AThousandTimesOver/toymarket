@@ -27,6 +27,7 @@
     <string name="wztx">随手说出你此刻的心声...</string>
     <string name="fbpp">发布</string>
     <string name="qxfb">取消</string>
+    <string name="zero">0</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

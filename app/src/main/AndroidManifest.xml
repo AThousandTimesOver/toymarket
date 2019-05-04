@@ -37,7 +37,8 @@
             android:label="@string/title_activity_firsthand"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".shoucang" />
-        <activity android:name=".Edittiezi2Activity"></activity>
+        <activity android:name=".Edittiezi2Activity" />
+        <activity android:name=".Tiezi2Activity"></activity>
     </application>
 
 </manifest>

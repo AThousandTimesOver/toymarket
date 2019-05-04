@@ -46,15 +46,16 @@
                         android:id="@+id/imageView_yhheadpic"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:src="@drawable/ic_menu_share" />
+                        android:src="@drawable/bptx" />
 
                     <TextView
                         android:id="@+id/textview_yhname"
-                        android:layout_width="120dp"
-                        android:layout_height="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_marginLeft="5pt"
+                        android:layout_marginStart="5pt"
                         android:layout_toRightOf="@+id/imageView_yhheadpic"
-                        android:gravity="center_vertical"
+                        android:layout_toEndOf="@+id/imageView_yhheadpic"
                         android:text="玩具女孩"
                         android:textColor="#818095" />
 
@@ -74,8 +75,8 @@
                 <TextView
                     android:id="@+id/textView_teacher_nickname"
                     android:layout_width="240dp"
-                    android:layout_height="20dp"
-                    android:text="Medium Text"
+                    android:layout_height="30dp"
+                    android:text="@string/tiezibiaoti"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="#367EAA" />
 
@@ -85,18 +86,45 @@
                     android:layout_height="40dp"
                     android:ellipsize="end"
                     android:maxLines="2"
-                    android:layout_marginTop="2pt"
-                    android:text="@string/item1"
+                    android:text="————————"
                     android:textColor="#818095" />
 
                 <!--<TextView-->
                     <!--android:id="@+id/textView_university"-->
                     <!--android:layout_width="wrap_content"-->
                     <!--android:layout_height="wrap_content"-->
-                    <!--android:text="@string/item2"-->
+                    <!--android:text="@string/dier"-->
                     <!--android:textColor="#818095" />-->
             </LinearLayout>
         </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="-25dp">
+            <ImageView
+                android:id="@+id/zan_img"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                />
+            <TextView
+                android:id="@+id/zan_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <ImageView
+                android:id="@+id/shoucan_img"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                />
+            <TextView
+                android:id="@+id/shoucan_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
 
     </LinearLayout>
 </LinearLayout>

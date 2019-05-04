@@ -63,7 +63,7 @@ public class shoucangDB extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getReadableDatabase();
 ////        Cursor cursor = db.query("sctable", (String[])null, (String)null, (String[])null, (String)null, (String)null, (String)null);
 ////        return cursor;
-        String selectSQL = "select * from blogtable where _id in (select blogid from sctable)";
+        String selectSQL = "select * from blogtable where _id in (select blogid from sctable) order by _id desc";
 //        String selectSQL = "select * from sctable";
         Cursor cursor = db.rawQuery(selectSQL,null);
         while (cursor.moveToNext()){
