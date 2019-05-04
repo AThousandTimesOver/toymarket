@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">toy_me_message</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_me_message">me_message</string>
+    <string name="Button1">一手经销</string>
+    <string name="Button2">二手好物</string>
+    <string name="Button3">论坛</string>
+    <string name="result">论坛的详细内容</string>
+    <string name="item1">快来围观啊</string>
+    <string name="item2">分享好玩具了</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="tiezi1">今天和大家分享一下信价比较高的玩具城\n第一：Hamleys玩具城\n中国首家世界最大玩具城坐落南京市。         地址：孙中山先生雕像右手边     </string>
+    <string name="tiezi2">第二：皇家迪智尼玩具\n引入欧美四大领域玩具，德国微工坊、陶瓷搭建、3D打印笔等八大类玩具等你来玩哦</string>
+    <string name="title_activity_main3">Main3Activity</string>
+    <string name="yhname">玩具女孩\n2018年11月28日</string>
+    <string name="tiezizuozheming">玩具女孩</string>
+    <string name="tiezishijian">2018年11月28日</string>
+    <string name="tiezibiaoti">盘点南京最受欢迎的玩具城</string>
+    <string name="fbxx">发布信息</string>
+    <string name="tzbt">为帖子拟一个标题吧...</string>
+    <string name="wztx">随手说出你此刻的心声...</string>
+    <string name="fbpp">发布</string>
+    <string name="qxfb">取消</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_luntan2">luntan2</string>
+    <string name="title_activity_firsthand">firsthand</string>
+</resources>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/opp_button_background"
+    android:orientation="vertical" >
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5pt">
+
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10pt"
+            android:layout_marginRight="10pt"
+            android:layout_marginTop="10pt"
+            >
+
+            <!--<ImageView-->
+            <!--android:id="@+id/imageView_headpic"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentLeft="true"-->
+
+            <!--android:src="@drawable/ic_menu_camera" />-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/imageView_headpic2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignBottom="@+id/imageView_headpic"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:src="@drawable/ic_menu_gallery" />-->
+
+            <TextView
+                android:id="@+id/textView_ID_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="公司名"
+                android:textSize="40px"
+                android:layout_alignParentLeft="true"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#367EAA" />
+            <!--android:layout_toRightOf="@+id/imageView_headpic"-->
+            <!--android:layout_marginLeft="30px"-->
+            <!--android:layout_marginTop="5pt"-->
+
+
+            <TextView
+                android:id="@+id/textView_ID_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="状态"
+                android:textSize="40px"
+                android:layout_alignParentRight="true"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffbb33" />
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout2"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10pt"
+            android:layout_marginRight="10pt"
+            android:background="#FFFFFF"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imageView_headpic2"
+                android:layout_width="82dp"
+                android:layout_height="82dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5pt"
+                android:src="@drawable/ic_menu_gallery" />
+
+            <RelativeLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imageView_headpic2"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical" >
+                <!--android:layout_below="@+id/linearLayout2"-->
+                <!--android:layout_marginTop="5pt"-->
+                <!--android:layout_marginBottom="5pt"-->            <!--android:layout_alignParentRight="true"-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_toLeftOf="@+id/textView_teacher_name">
+
+                    <TextView
+                        android:id="@+id/textView_teacher_nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="物品名称/款式"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#367EAA" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/textView_teacher_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="单个价钱"
+                    android:layout_alignParentRight="true"
+                    android:textColor="#818095" />
+
+                <TextView
+                    android:id="@+id/textView_university"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="x几个"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/textView_teacher_name"
+                    android:textColor="#818095" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView_zongjiage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总价格"
+            android:textSize="45px"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10pt"
+            android:layout_below="@+id/linearLayout3"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="付款"
+            android:layout_below="@+id/textView_zongjiage"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10pt"
+            />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消订单"
+            android:layout_below="@+id/textView_zongjiage"
+            android:layout_toLeftOf="@+id/button"
+            android:layout_marginRight="5pt"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

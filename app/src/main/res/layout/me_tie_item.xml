@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/opp_button_background"
+    android:orientation="vertical" >
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5pt">
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10pt"
+            android:layout_marginTop="5pt"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imageView_headpic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+
+                android:src="@drawable/ic_menu_camera" />
+
+            <!--<ImageView-->
+                <!--android:id="@+id/imageView_headpic2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignBottom="@+id/imageView_headpic"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:src="@drawable/ic_menu_gallery" />-->
+
+            <TextView
+                android:id="@+id/textView_ID_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID"
+                android:textSize="40px"
+                android:layout_toRightOf="@+id/imageView_headpic"
+                android:layout_marginLeft="30px"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#367EAA" />
+
+            <!--android:layout_marginTop="5pt"-->
+
+        </LinearLayout>
+
+
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout2"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10pt"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imageView_headpic2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_menu_gallery"
+                />
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout2"
+                android:layout_toRightOf="@+id/imageView_headpic2"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical" >
+        <!--android:layout_marginTop="5pt"-->
+        <!--android:layout_marginBottom="5pt"-->            <!--android:layout_alignParentRight="true"-->
+
+                <TextView
+                    android:id="@+id/textView_teacher_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="帖子标题"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#367EAA" />
+
+                <TextView
+                    android:id="@+id/textView_teacher_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="帖子内容"
+                    android:textColor="#818095" />
+
+                <TextView
+                    android:id="@+id/textView_university"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="帖子内容"
+                    android:textColor="#818095" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>

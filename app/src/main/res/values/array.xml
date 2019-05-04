@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="companny">
+        <item>乐高</item>
+        <item>任天堂</item>
+        <item>美泰</item>
+        <item>Hasbro</item>
+        <item>迪士尼</item>
+        <item>Nerf</item>
+        <item>美佳玩具</item>
+        <item>芭比娃娃</item>
+        <item>摩比世界</item>
+        <item>孩之宝儿乐宝</item>
+    </string-array>
+    <string-array name="kind">
+        <item>启蒙玩具</item>
+        <item>主题玩具</item>
+        <item>益智玩具</item>
+        <item>科技玩具</item>
+        <item>音乐玩具</item>
+        <item>健身玩具</item>
+        <item>拼图玩具</item>
+        <item>操作类玩具</item>
+        <item>语言教育玩具</item>
+        <item>智力开发玩具</item>
+        <item>科学实验玩具</item>
+    </string-array>
+    <string-array name="ranking">
+        <item>早教</item>
+        <item>芭比娃娃</item>
+        <item>芭比</item>
+        <item>美国队长</item>
+        <item>葫芦娃</item>
+    </string-array>
+
+
+</resources>

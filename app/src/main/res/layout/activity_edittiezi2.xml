@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Edittiezi2Activity">
+
+    <!-- 顶部添加文字 -->
+    <RelativeLayout
+        android:id="@+id/Layout_top"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:text="@string/fbxx" />
+        <EditText
+            android:id="@+id/add_content1"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@android:drawable/edit_text"
+            android:enabled="true"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:maxLines="10"
+            android:minLines="8"
+            android:scrollbars="vertical"
+            android:hint="@string/tzbt"/>
+    </RelativeLayout>
+    <!-- 底部按钮 -->
+    <!-- 显示图片 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentBottom="true" >
+        <!-- 设置运行多行 设置圆角图形 黑色字体-->
+        <EditText
+            android:id="@+id/add_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/edit_text"
+            android:enabled="true"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:maxLines="10"
+            android:minLines="8"
+            android:scrollbars="vertical"
+            android:hint="@string/wztx"/>
+        <!-- 网格显示图片 行列间距5dp 每列宽度90dp -->
+        <GridView
+            android:id="@+id/gridView1"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:layout_margin="10dp"
+            android:background="#EFDFDF"
+            android:horizontalSpacing="5dp"
+            android:verticalSpacing="5dp"
+            android:numColumns="3"
+            android:columnWidth="90dp"
+            android:stretchMode="columnWidth"
+            android:gravity="center" >
+        </GridView>
+
+
+        <RelativeLayout
+            android:id="@+id/Layout_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/fbpp"
+                android:textStyle="bold"
+                android:textColor="#ffff"
+                android:textSize="20sp"
+                android:background="@drawable/editview_shape"/>
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_toEndOf="@+id/button1"
+                android:layout_toRightOf="@+id/button1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:text="@string/qxfb"
+                android:textStyle="bold"
+                android:textColor="#ffff"
+                android:textSize="20sp"
+                android:background="@drawable/editview_shape1"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

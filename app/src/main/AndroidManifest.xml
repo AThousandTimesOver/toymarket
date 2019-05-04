@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jmy.toy_me_message">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".me_message" />
+        <activity android:name=".me_tie" />
+        <activity android:name=".me_dingdan" />
+        <activity android:name=".me_dingdan_zulin" />
+        <activity android:name=".me_dingdan_goumai" />
+        <activity android:name=".me_qianbao" />
+        <activity android:name=".luntan" />
+        <activity android:name=".TieziActivity" />
+        <activity
+            android:name=".luntan2"
+            android:label="@string/title_activity_luntan2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".firsthand"
+            android:label="@string/title_activity_firsthand"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".shoucang" />
+        <activity android:name=".Edittiezi2Activity"></activity>
+    </application>
+
+</manifest>

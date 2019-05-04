@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".me_message">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/opp_button_background"
+        android:drawableLeft="@drawable/ic_menu_camera"
+        android:drawablePadding="12dp"
+        android:drawableRight="@drawable/ic_menu_send"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@我的"
+        android:textSize="40px"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="@drawable/opp_button_background"
+        android:drawableLeft="@drawable/ic_menu_gallery"
+        android:drawablePadding="12dp"
+        android:drawableRight="@drawable/ic_menu_send"
+        android:gravity="center_vertical"
+        android:text="评论"
+        android:textSize="40px"
+        android:textColor="#000000"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="@drawable/opp_button_background"
+        android:drawableLeft="@drawable/ic_menu_manage"
+        android:drawablePadding="12dp"
+        android:drawableRight="@drawable/ic_menu_send"
+        android:gravity="center_vertical"
+        android:text="赞"
+        android:textSize="40px"
+        android:textColor="#000000"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="@drawable/opp_button_background"
+        android:drawableLeft="@drawable/ic_menu_send"
+        android:drawablePadding="12dp"
+        android:drawableRight="@drawable/ic_menu_send"
+        android:gravity="center_vertical"
+        android:text="私信"
+        android:textSize="40px"
+        android:textColor="#000000"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="我的消息"
+        android:textSize="45px"
+        android:textColor="#FFFFFF"
+        android:background="#FFFFBB33"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>
