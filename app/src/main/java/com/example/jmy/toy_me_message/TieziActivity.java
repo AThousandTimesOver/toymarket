@@ -145,8 +145,7 @@ public class TieziActivity extends AppCompatActivity {
         //getXxxExtra方法获取Intent传递过来的数据
         final Blog b = (Blog) intent.getSerializableExtra("b");
 
-        final int ort=0;
-        if(ort==0){
+        if(shoucangDB.ifhavesc(b._id)==0){
             shoucangnum.setText(0 + "");
             shoucangImage.setImageDrawable(getResources().getDrawable(R.drawable.bstar));
         }else{
@@ -176,17 +175,18 @@ public class TieziActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 if(v == shoucangImage) {
-                    if(ort==0){
+                    if(shoucangDB.ifhavesc(b._id)==0){
                         shoucangnum.setText(1 + "");
                         shoucangImage.startAnimation(animation);
                         shoucangImage.setImageDrawable(getResources().getDrawable(R.drawable.ystar));
-
+                        shoucangDB.insert(b._id);
                         //改ort=1;收藏数据库
                     }else {
                         Log.i("debug", "click");
 
                         shoucangImage.setImageDrawable(getResources().getDrawable(R.drawable.bstar));
                         shoucangnum.setText(0 + "");
+                        shoucangDB.delete(b._id);
 
                         //    ort=0;删除数据库；
                     }

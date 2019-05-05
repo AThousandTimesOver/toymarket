@@ -183,7 +183,7 @@ public class shoucangDB extends SQLiteOpenHelper {
     }
 
 
-    public long insert(Integer text0,Integer text1) {
+    public long insert(Integer text1) {
         //i++;
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
