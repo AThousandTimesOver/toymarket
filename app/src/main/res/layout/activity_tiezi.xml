@@ -33,7 +33,7 @@
                     android:layout_marginTop="50dp"
                     android:layout_marginEnd="18dp"
                     android:layout_marginRight="18dp"
-                    android:text="¹Ø×¢" />
+                    android:text="@string/guanzhu" />
 
                 <LinearLayout
 
@@ -152,13 +152,13 @@
                     android:id="@+id/shoucan_img"
                     android:layout_width="wrap_content"
                     android:layout_height="25dp"
-                    android:src="@drawable/bstar"/>
+                  />
 
                 <TextView
                     android:id="@+id/shoucan_num"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/zero"/>
+              />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

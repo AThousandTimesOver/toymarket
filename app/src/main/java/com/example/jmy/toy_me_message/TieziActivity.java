@@ -145,6 +145,14 @@ public class TieziActivity extends AppCompatActivity {
         //getXxxExtra方法获取Intent传递过来的数据
         final Blog b = (Blog) intent.getSerializableExtra("b");
 
+        final int ort=0;
+        if(ort==0){
+            shoucangnum.setText(0 + "");
+            shoucangImage.setImageDrawable(getResources().getDrawable(R.drawable.bstar));
+        }else{
+            shoucangnum.setText(1 + "");
+            shoucangImage.setImageDrawable(getResources().getDrawable(R.drawable.ystar));
+        }
         handImage.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -168,21 +176,22 @@ public class TieziActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 if(v == shoucangImage) {
-                    if(isChanged){
-                        shoucangnum.setText(0 + "");
-                        shoucangImage.setImageDrawable(getResources().getDrawable(R.drawable.bstar));
-                    }else {
-                        Log.i("debug", "click");
+                    if(ort==0){
+                        shoucangnum.setText(1 + "");
                         shoucangImage.startAnimation(animation);
                         shoucangImage.setImageDrawable(getResources().getDrawable(R.drawable.ystar));
-                        shoucangnum.setText(1 + "");
+
+                        //改ort=1;收藏数据库
+                    }else {
+                        Log.i("debug", "click");
+
+                        shoucangImage.setImageDrawable(getResources().getDrawable(R.drawable.bstar));
+                        shoucangnum.setText(0 + "");
+
+                        //    ort=0;删除数据库；
                     }
-                    isChanged = !isChanged;
                 }
             }
         });
     }
-
-
-
 }
