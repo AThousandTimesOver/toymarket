@@ -68,7 +68,9 @@ public class luntan2 extends AppCompatActivity
             public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,long arg3) {
                 Intent intent = new Intent();
                 if(blogs.size()-arg2==1) {
+                    Blog b = blogs.get(arg2);
                     intent.setClass(luntan2.this, TieziActivity.class);
+                    intent.putExtra("b", b);
                     startActivity(intent);
                 }
                 else {

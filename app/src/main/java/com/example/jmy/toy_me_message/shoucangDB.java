@@ -54,7 +54,7 @@ public class shoucangDB extends SQLiteOpenHelper {
 
     public void create(){
         SQLiteDatabase db = this.getReadableDatabase();
-        String sql = "CREATE TABLE IF NOT EXISTS sctable (_id INTEGER primary key autoincrement,  blogid int,  scnum int)";
+        String sql = "CREATE TABLE IF NOT EXISTS sctable (_id INTEGER primary key autoincrement,  blogid int)";
         db.execSQL(sql);
     }
 
@@ -81,6 +81,17 @@ public class shoucangDB extends SQLiteOpenHelper {
             Log.e("1",_id.toString()+","+title);
         }
         return blogs;
+    }
+
+    public int ifhavesc(int blogid){
+        Integer _id=0;
+        SQLiteDatabase db = this.getReadableDatabase();
+        String selectSQL = "select _id from sctable where blogid = " + blogid;
+        Cursor cursor = db.rawQuery(selectSQL,null);
+        while (cursor.moveToNext()) {
+            _id = cursor.getInt(0);
+        }
+        return _id;
     }
 
     public int selectscnum(int blogid){
@@ -172,22 +183,21 @@ public class shoucangDB extends SQLiteOpenHelper {
     }
 
 
-    public long insert(Integer text1,Integer text2) {
+    public long insert(Integer text0,Integer text1) {
         //i++;
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
         //cv.put("_id",text0);
         cv.put("blogid", text1);
-        cv.put("scnum", text2);
         long row = db.insert("sctable", (String)null, cv);
         return row;
     }
 
 
-    public void delete(int id) {
+    public void delete(int blogid) {
         SQLiteDatabase db = this.getWritableDatabase();
-        String where = "_id = ?";
-        String[] whereValue = new String[]{Integer.toString(id)};
+        String where = "blogid = ?";
+        String[] whereValue = new String[]{Integer.toString(blogid)};
         db.delete("sctable", where, whereValue);
     }
 

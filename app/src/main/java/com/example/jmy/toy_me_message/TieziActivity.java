@@ -121,11 +121,13 @@ public class TieziActivity extends AppCompatActivity {
                 shoucangDB.create();
 //                shoucangDB.drop();
 //                shoucangDB.deleteall();
+                shoucangDB.delete(1);
 //                for (int i=1;i<11;i++){
 //                    shoucangDB.delete(i);
 //                }
 //                shoucangDB.deleteAll();
 //                shoucangDB.insert(index,b._id);
+//                shoucangDB.ifhavesc(2);
                 shoucangDB.select();
             }
         });
