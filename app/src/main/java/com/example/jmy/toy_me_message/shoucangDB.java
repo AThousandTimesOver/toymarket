@@ -54,7 +54,7 @@ public class shoucangDB extends SQLiteOpenHelper {
 
     public void create(){
         SQLiteDatabase db = this.getReadableDatabase();
-        String sql = "CREATE TABLE IF NOT EXISTS sctable (_id INTEGER primary key autoincrement,  blogid int)";
+        String sql = "CREATE TABLE IF NOT EXISTS sctable (_id INTEGER primary key autoincrement,  blogid int,  scnum int)";
         db.execSQL(sql);
     }
 
@@ -83,10 +83,24 @@ public class shoucangDB extends SQLiteOpenHelper {
         return blogs;
     }
 
+    public int selectscnum(int blogid){
+        Integer scnum=0;
+        SQLiteDatabase db = this.getReadableDatabase();
+        String selectSQL = "select scnum from sctable where blogid = " + blogid;
+        Cursor cursor = db.rawQuery(selectSQL,null);
+        return scnum;
+    }
+
     public void deleteAll() {
         SQLiteDatabase db = this.getReadableDatabase();
         String delSQL = "delete from sctable";
         db.execSQL(delSQL);
+    }
+
+    public void deletesc(int blogid){
+        SQLiteDatabase db = this.getReadableDatabase();
+        String delSQL = "delete from sctable where blogid = " + blogid;
+        Cursor cursor = db.rawQuery(delSQL,null);
     }
 
     public int selectAllid() {
@@ -158,12 +172,13 @@ public class shoucangDB extends SQLiteOpenHelper {
     }
 
 
-    public long insert(Integer text0,Integer text1) {
+    public long insert(Integer text1,Integer text2) {
         //i++;
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
         //cv.put("_id",text0);
         cv.put("blogid", text1);
+        cv.put("scnum", text2);
         long row = db.insert("sctable", (String)null, cv);
         return row;
     }
@@ -190,6 +205,12 @@ public class shoucangDB extends SQLiteOpenHelper {
         ContentValues cv = new ContentValues();
         cv.put("title", text);
         db.update("sctable", cv, where, whereValue);
+    }
+
+    public void updatesc(int blogid,int scnum){
+        SQLiteDatabase db = this.getReadableDatabase();
+        String delSQL = "update scnum = " + scnum + "from sctable where blogid = " + blogid;
+        db.execSQL(delSQL);
     }
 }
 

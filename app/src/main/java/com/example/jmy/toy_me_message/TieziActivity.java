@@ -125,14 +125,10 @@ public class TieziActivity extends AppCompatActivity {
 //                    shoucangDB.delete(i);
 //                }
 //                shoucangDB.deleteAll();
-                shoucangDB.insert(index,b._id);
+//                shoucangDB.insert(index,b._id);
                 shoucangDB.select();
             }
         });
-
-
-
-
 
 
 
@@ -143,6 +139,10 @@ public class TieziActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
+        Intent intent =getIntent();
+        //getXxxExtra方法获取Intent传递过来的数据
+        final Blog b = (Blog) intent.getSerializableExtra("b");
+
         handImage.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
