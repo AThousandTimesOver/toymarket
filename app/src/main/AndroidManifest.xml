@@ -39,6 +39,134 @@
         <activity android:name=".shoucang" />
         <activity android:name=".Edittiezi2Activity" />
         <activity android:name=".Tiezi2Activity" />
+
+
+        <activity
+            android:name=".firsthandsell"
+            android:label="@string/title_activity_firsthandsell"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".firsthandsell1"
+            android:label="@string/title_activity_firsthandsell1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".firsthandsell2"
+            android:label="@string/title_activity_firsthandsell2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".firsthandsell3"
+            android:label="@string/title_activity_firsthandsell3"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".firsthandsell4"
+            android:label="@string/title_activity_firsthandsell4"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".firsthandsell5"
+            android:label="@string/title_activity_firsthandsell5"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".firsthandsell6"
+            android:label="@string/title_activity_firsthandsell6"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".firsthandsell7"
+            android:label="@string/title_activity_firsthandsell7"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".firsthandsell8"
+            android:label="@string/title_activity_firsthandsell8"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".firsthandbuy" />
+        <activity android:name=".firsthandbuy1" />
+        <activity android:name=".firsthandbuy2" />
+        <activity android:name=".firsthandbuy11" />
+        <activity android:name=".firsthandbuy12" />
+        <activity android:name=".firsthandbuy13" />
+        <activity android:name=".firsthandbuy21" />
+        <activity android:name=".firsthandbuy22" />
+        <activity android:name=".firsthandbuy23" />
+        <activity android:name=".firsthandbuy31" />
+        <activity android:name=".firsthandbuy32" />
+        <activity android:name=".firsthandbuy33" />
+        <activity android:name=".firsthandbuy41" />
+        <activity android:name=".firsthandbuy42" />
+        <activity android:name=".firsthandbuy43" />
+        <activity android:name=".firsthandbuy51" />
+        <activity android:name=".firsthandbuy52" />
+        <activity android:name=".firsthandbuy53" />
+        <activity android:name=".firsthandbuy61" />
+        <activity android:name=".firsthandbuy62" />
+        <activity android:name=".firsthandbuy63" />
+        <activity android:name=".firsthandbuy71" />
+        <activity android:name=".firsthandbuy72" />
+        <activity android:name=".firsthandbuy73" />
+        <activity android:name=".firsthandbuy81" />
+        <activity android:name=".firsthandbuy82" />
+        <activity android:name=".firsthandbuy83" />
+        <activity
+            android:name=".secondhandsell"
+            android:label="@string/title_activity_secondhandsell"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".secondhandsell1"
+            android:label="@string/title_activity_secondhandsell1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".secondhandsell2"
+            android:label="@string/title_activity_secondhandsell2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".secondhandsell3"
+            android:label="@string/title_activity_secondhandsell3"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".secondhandsell4"
+            android:label="@string/title_activity_secondhandsell4"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".secondhandsell5"
+            android:label="@string/title_activity_secondhandsell5"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".secondhandsell6"
+            android:label="@string/title_activity_secondhandsell6"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".secondhandsell7"
+            android:label="@string/title_activity_secondhandsell7"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".secondhandsell8"
+            android:label="@string/title_activity_secondhandsell8"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".secondhandbuy1" />
+        <activity android:name=".secondhandbuy2" />
+        <activity android:name=".secondhandbuy3" />
+        <activity android:name=".secondhandbuy11" />
+        <activity android:name=".secondhandbuy12" />
+        <activity android:name=".secondhandbuy13" />
+        <activity android:name=".secondhandbuy21" />
+        <activity android:name=".secondhandbuy22" />
+        <activity android:name=".secondhandbuy23" />
+        <activity android:name=".secondhandbuy31" />
+        <activity android:name=".secondhandbuy32" />
+        <activity android:name=".secondhandbuy33" />
+        <activity android:name=".secondhandbuy41" />
+        <activity android:name=".secondhandbuy42" />
+        <activity android:name=".secondhandbuy43" />
+        <activity android:name=".secondhandbuy51" />
+        <activity android:name=".secondhandbuy52" />
+        <activity android:name=".secondhandbuy53" />
+        <activity android:name=".secondhandbuy61" />
+        <activity android:name=".secondhandbuy62" />
+        <activity android:name=".secondhandbuy63" />
+        <activity android:name=".secondhandbuy71" />
+        <activity android:name=".secondhandbuy72" />
+        <activity android:name=".secondhandbuy73" />
+        <activity android:name=".secondhandbuy81" />
+        <activity android:name=".secondhandbuy82" />
+        <activity android:name=".secondhandbuy83"></activity>
     </application>
 
 </manifest>
