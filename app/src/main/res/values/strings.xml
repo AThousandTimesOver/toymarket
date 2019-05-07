@@ -34,4 +34,5 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_luntan2">luntan2</string>
     <string name="title_activity_firsthand">firsthand</string>
+    <string name="title_activity_firsthandsell">firsthandsell</string>
 </resources>

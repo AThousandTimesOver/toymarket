@@ -57,7 +57,18 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    private LinearLayout ll;
+
+    private Button button33;
+    private Button button34;
+    private Button button12;
+    private Button button13;
+    private Button button18;
+    private Button button19;
+    private Button button20;
+    private Button button21;
+    private Button button22;
+    private Button button23;
+    private Button button31;
 //    private TextView title, item_weixin, item_tongxunlu, item_faxian, item_me,item_daifanhuan,item_fanhuanzhong;
 //    private ViewPager vp;
 //    private firsthand1 oneFragment;
@@ -76,8 +87,89 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        ll=(LinearLayout) findViewById(R.id.LinearLayout1);
-        ll.setOnClickListener(new View.OnClickListener() {
+        button33=(Button) findViewById(R.id.button33);
+        button12=(Button)findViewById(R.id.button12);
+        button13=(Button)findViewById(R.id.button13);
+        button18=(Button)findViewById(R.id.button18);
+        button19=(Button)findViewById(R.id.button19);
+        button20=(Button)findViewById(R.id.button20);
+        button21=(Button)findViewById(R.id.button21);
+        button22=(Button)findViewById(R.id.button22);
+        button23=(Button)findViewById(R.id.button23);
+        button31=(Button)findViewById(R.id.button31);
+        button31.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent();
+                intent.setClass(MainActivity.this,secondhandsell8.class);
+                startActivity(intent);
+            }
+        });
+        button23.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent();
+                intent.setClass(MainActivity.this,secondhandsell7.class);
+                startActivity(intent);
+            }
+        });
+        button22.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent();
+                intent.setClass(MainActivity.this,secondhandsell6.class);
+                startActivity(intent);
+            }
+        });
+        button21.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent();
+                intent.setClass(MainActivity.this,secondhandsell5.class);
+                startActivity(intent);
+            }
+        });
+        button20.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent();
+                intent.setClass(MainActivity.this,secondhandsell4.class);
+                startActivity(intent);
+            }
+        });
+        button19.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent();
+                intent.setClass(MainActivity.this,secondhandsell3.class);
+                startActivity(intent);
+            }
+        });
+        button18.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent();
+                intent.setClass(MainActivity.this,secondhandsell2.class);
+                startActivity(intent);
+            }
+        });
+        button13.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent();
+                intent.setClass(MainActivity.this,secondhandsell1.class);
+                startActivity(intent);
+            }
+        });
+        button12.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent();
+                intent.setClass(MainActivity.this,secondhandsell.class);
+                startActivity(intent);
+            }
+        });
+        button33.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
@@ -86,8 +178,8 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
-        ll=(LinearLayout) findViewById(R.id.LinearLayout3);
-        ll.setOnClickListener(new View.OnClickListener() {
+        button34=(Button) findViewById(R.id.button34);
+        button34.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
