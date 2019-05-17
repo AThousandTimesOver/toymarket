@@ -24,6 +24,7 @@ private Button button11;
         setContentView(R.layout.activity_firsthandsell);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().hide();
 
         button9=(Button)findViewById(R.id.button9);
         button10=(Button)findViewById(R.id.button10);

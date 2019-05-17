@@ -17,6 +17,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView.FindListener;
 import android.widget.ArrayAdapter;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
@@ -29,6 +30,12 @@ public class me_tie extends AppCompatActivity {
 
 
     private ListView lv_teacher;
+    private LinearLayout ll;
+    private shoucangDB shoucangDB;
+    private  blogDB blogDB;
+    private int _id;
+    private ArrayList<Blog> blogs;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,10 +46,13 @@ public class me_tie extends AppCompatActivity {
         setContentView(R.layout.activity_me_tie);
         lv_teacher = (ListView)findViewById(R.id.list);
 
+        shoucangDB = new shoucangDB(this);
+        blogDB = new blogDB(this);
+
         //给链表添加数据
         List<Map<String, Object>> list=getData();
         //适配器，刚刚重写的！
-        MyAdapter myAdapter = new MyAdapter(this.getApplicationContext(),list);
+        luntan2_Adapter myAdapter = new luntan2_Adapter(this.getApplicationContext(),list);
         //设置适配器
         lv_teacher.setAdapter(myAdapter);
 
@@ -51,8 +61,19 @@ public class me_tie extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,long arg3) {
                 Intent intent = new Intent();
-                intent.setClass(me_tie.this, TieziActivity.class);
-                startActivity(intent);
+                if(blogs.size()-arg2==1) {
+                    Blog b = blogs.get(arg2);
+                    intent.setClass(me_tie.this, TieziActivity.class);
+                    intent.putExtra("b", b);
+                    startActivity(intent);
+                }
+                else {
+                    Blog b = blogs.get(arg2);
+                    intent.setClass(me_tie.this, Tiezi2Activity.class);
+                    intent.putExtra("b", b);
+                    startActivity(intent);
+                    // Log.e("1",""+arg2+","+arg3);
+                }
             }
         });
 
@@ -71,13 +92,16 @@ public class me_tie extends AppCompatActivity {
     //填充数据
     public List<Map<String, Object>> getData() {
         List<Map<String, Object>> list = new ArrayList<Map<String, Object>>();
-        for (int i = 0; i < 10; i++) {
+        blogs = blogDB.select();
+        for (int i = 0; i < blogs.size(); i++) {
             Map<String, Object> map = new HashMap<String, Object>();
-            map.put("image", R.drawable.hamleys);
+            Blog b = blogs.get(i);
+            //map.put("image", R.drawable.hamleys);
             map.put("image1",R.drawable.bptx);
-            map.put("teacher_name", "第一：Hamleys玩具城");
-            map.put("teacher_nickname", "盘点南京最受欢迎的玩具城");
-            map.put("university", "第二：皇家迪智尼玩具");
+            map.put("teacher_name", b.context);
+            map.put("teacher_nickname", b.title);
+            map.put("university", b.author);
+            map.put("time", b.time);
             list.add(map);
         }
         return list;

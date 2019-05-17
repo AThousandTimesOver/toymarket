@@ -24,6 +24,8 @@ public class secondhandsell extends AppCompatActivity
         setContentView(R.layout.activity_secondhandsell);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().hide();
+
 
         button9=(Button)findViewById(R.id.button9);
         button10=(Button)findViewById(R.id.button10);

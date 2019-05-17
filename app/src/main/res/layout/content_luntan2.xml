@@ -52,8 +52,8 @@
             <ImageView
                 android:id="@+id/imageView2"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/ic_menu_camera" />
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/yishou" />
 
             <TextView
                 android:id="@+id/textView2"
@@ -76,8 +76,8 @@
             <ImageView
                 android:id="@+id/imageView3"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/ic_menu_manage" />
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/ershou" />
 
             <TextView
                 android:id="@+id/textView3"
@@ -100,11 +100,11 @@
             <ImageView
                 android:id="@+id/imageView4"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/ic_menu_share" />
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/luntan" />
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/textViewlt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"

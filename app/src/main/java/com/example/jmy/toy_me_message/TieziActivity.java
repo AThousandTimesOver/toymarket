@@ -105,11 +105,12 @@ public class TieziActivity extends AppCompatActivity {
                 blogDB.create();
 //                shoucangDB.drop();
 //                shoucangDB.deleteall();
+//                blogDB.delete(3);
 //                for (int i=1;i<11;i++){
 //                    shoucangDB.delete(i);
 //                }
 //                shoucangDB.deleteAll();
-                blogDB.insert(index,title.getText().toString(),time.getText().toString(),author.getText().toString(),context.getText().toString());
+//                blogDB.insert(index,title.getText().toString(),time.getText().toString(),author.getText().toString(),context.getText().toString());
                 blogDB.select();
             }
         });
@@ -121,7 +122,7 @@ public class TieziActivity extends AppCompatActivity {
                 shoucangDB.create();
 //                shoucangDB.drop();
 //                shoucangDB.deleteall();
-                shoucangDB.delete(1);
+//                shoucangDB.delete(1);
 //                for (int i=1;i<11;i++){
 //                    shoucangDB.delete(i);
 //                }

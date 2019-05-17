@@ -69,6 +69,8 @@ public class MainActivity extends AppCompatActivity
     private Button button22;
     private Button button23;
     private Button button31;
+    private LinearLayout yishou;
+    private LinearLayout luntan;
 //    private TextView title, item_weixin, item_tongxunlu, item_faxian, item_me,item_daifanhuan,item_fanhuanzhong;
 //    private ViewPager vp;
 //    private firsthand1 oneFragment;
@@ -87,7 +89,9 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        button33=(Button) findViewById(R.id.button33);
+        yishou=(LinearLayout)findViewById(R.id.LinearLayout1);
+        luntan=(LinearLayout)findViewById(R.id.LinearLayout3);
+        //button33=(Button) findViewById(R.id.button33);
         button12=(Button)findViewById(R.id.button12);
         button13=(Button)findViewById(R.id.button13);
         button18=(Button)findViewById(R.id.button18);
@@ -169,7 +173,7 @@ public class MainActivity extends AppCompatActivity
                 startActivity(intent);
             }
         });
-        button33.setOnClickListener(new View.OnClickListener() {
+        yishou.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
@@ -178,8 +182,8 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
-        button34=(Button) findViewById(R.id.button34);
-        button34.setOnClickListener(new View.OnClickListener() {
+        //button34=(Button) findViewById(R.id.button34);
+        luntan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
@@ -281,34 +285,34 @@ public class MainActivity extends AppCompatActivity
 
 
 
-        LinearLayout butt2 = navigationView.getHeaderView(0).findViewById(R.id.butt2);
-
-        class MyListener1 implements View.OnClickListener {
-            @Override
-            public void onClick(View v){
-                Intent intent=new Intent(MainActivity.this,Edittiezi2Activity.class);
-                startActivity(intent);
-            }
-        };
-
-        View.OnClickListener listener1 = new  MyListener1();
-        butt2.setOnClickListener(listener1);
-
-
+//        LinearLayout butt2 = navigationView.getHeaderView(0).findViewById(R.id.butt2);
+//
+//        class MyListener1 implements View.OnClickListener {
+//            @Override
+//            public void onClick(View v){
+//                Intent intent=new Intent(MainActivity.this,Edittiezi2Activity.class);
+//                startActivity(intent);
+//            }
+//        };
+//
+//        View.OnClickListener listener1 = new  MyListener1();
+//        butt2.setOnClickListener(listener1);
 
 
-        LinearLayout butt3 = navigationView.getHeaderView(0).findViewById(R.id.butt3);
 
-        class MyListener2 implements View.OnClickListener {
-            @Override
-            public void onClick(View v){
-                Intent intent=new Intent(MainActivity.this,TieziActivity.class);
-                startActivity(intent);
-            }
-        };
 
-        View.OnClickListener listener2 = new  MyListener2();
-        butt3.setOnClickListener(listener2);
+//        LinearLayout butt3 = navigationView.getHeaderView(0).findViewById(R.id.butt3);
+//
+//        class MyListener2 implements View.OnClickListener {
+//            @Override
+//            public void onClick(View v){
+//                Intent intent=new Intent(MainActivity.this,TieziActivity.class);
+//                startActivity(intent);
+//            }
+//        };
+//
+//        View.OnClickListener listener2 = new  MyListener2();
+//        butt3.setOnClickListener(listener2);
 
 
 
@@ -329,9 +333,9 @@ public class MainActivity extends AppCompatActivity
                 (new MenuItem.OnMenuItemClickListener() {
                     @Override
                     public boolean onMenuItemClick(MenuItem item) {
-                        Intent intent = new Intent(MainActivity.this ,
-                                Edittiezi2Activity.class);
-                        startActivity(intent);
+//                        Intent intent = new Intent(MainActivity.this ,
+//                                Edittiezi2Activity.class);
+//                        startActivity(intent);
                         return true;
                     }
                 });

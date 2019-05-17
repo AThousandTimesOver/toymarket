@@ -63,14 +63,16 @@ public class Edittiezi2Activity extends AppCompatActivity{
 
 
     private int[] images=new int[]{
-            R.drawable.plus,R.drawable.ic_menu_camera,R.drawable.hamleys,
-            R.drawable.hjdzn,R.drawable.side_nav_bar,R.drawable.ic_menu_share,
+            R.drawable.plus,R.drawable.toycar,R.drawable.elephant,
+            R.drawable.giraffe,R.drawable.three,R.drawable.pig,
     };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edittiezi2);
+        getSupportActionBar().hide();
+
         gridView=(GridView)findViewById(R.id.gridView1);
         Picture1Adapter adapter=new Picture1Adapter(images,this);
         gridView.setAdapter(adapter);
@@ -100,7 +102,7 @@ public class Edittiezi2Activity extends AppCompatActivity{
                 blogDB.create();
 //                blogDB.deleteall();
 //                blogDB.delete(2);
-//                blogDB.insert(index,title.getText().toString(),year+"年"+month+"月"+day+"日","玩具女孩",context.getText().toString());
+                blogDB.insert(index,title.getText().toString(),year+"年"+month+"月"+day+"日","玩具女孩",context.getText().toString());
                 blogDB.select();
 
                 Intent intent = new Intent();

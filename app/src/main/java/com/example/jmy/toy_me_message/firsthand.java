@@ -44,6 +44,8 @@ public class firsthand extends AppCompatActivity
     private Button button;
     private Button button4;
     private Button button14;
+    private LinearLayout ershou;
+    private LinearLayout luntan;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,7 +54,9 @@ public class firsthand extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        button15=(Button) findViewById(R.id.button15);
+        ershou=(LinearLayout)findViewById(R.id.LinearLayout1);
+        luntan=(LinearLayout)findViewById(R.id.LinearLayout3);
+        //button15=(Button) findViewById(R.id.button15);
         button8=(Button)findViewById(R.id.button8);
         button7=(Button)findViewById(R.id.button7) ;
         button6=(Button)findViewById(R.id.button6);
@@ -62,7 +66,7 @@ public class firsthand extends AppCompatActivity
         button=(Button)findViewById(R.id.button);
         button4=(Button)findViewById(R.id.button4);
         button14=(Button)findViewById(R.id.button14);
-        button15.setOnClickListener(new View.OnClickListener() {
+        ershou.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
@@ -143,8 +147,8 @@ public class firsthand extends AppCompatActivity
             }
         });
 
-        button17=(Button) findViewById(R.id.button17);
-        button17.setOnClickListener(new View.OnClickListener() {
+        //button17=(Button) findViewById(R.id.button17);
+        luntan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
@@ -164,13 +168,28 @@ public class firsthand extends AppCompatActivity
 //            }
 //        });
 
+
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
+
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        LinearLayout butt = navigationView.getHeaderView(0).findViewById(R.id.butt);
+
+        class MyListener implements View.OnClickListener {
+            @Override
+            public void onClick(View v){
+                Intent intent=new Intent(firsthand.this,shoucang.class);
+                startActivity(intent);
+            }
+        };
+
+        View.OnClickListener listener0 = new  MyListener();
+        butt.setOnClickListener(listener0);
+
         navigationView.setNavigationItemSelectedListener(this);
     }
 

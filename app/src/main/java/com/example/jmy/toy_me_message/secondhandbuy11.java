@@ -9,5 +9,6 @@ public class secondhandbuy11 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_secondhandbuy11);
+        getSupportActionBar().hide();
     }
 }

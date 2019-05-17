@@ -6,29 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".Tiezi2Activity">
 
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:background="#FFFFBB33"
-        android:gravity="center"
-        android:text="论坛"
-        android:textColor="#FFFFFF"
-        android:textSize="45px"
-        app:layout_constraintBottom_toTopOf="@+id/LinearLayout1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/LinearLayout1"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView15">
-
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
             android:id="@+id/LinearLayout"
             android:layout_width="match_parent"
@@ -50,7 +27,7 @@
                     android:layout_marginTop="50dp"
                     android:layout_marginEnd="18dp"
                     android:layout_marginRight="18dp"
-                    android:text="关注" />
+                    android:text="@string/guanzhu" />
 
                 <LinearLayout
 
@@ -117,8 +94,8 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginRight="10dp"
-                android:textSize="50px"
                 android:text="@string/tiezi1"
+                android:textSize="50px"
                 android:textColor="#020202" />
 
             <!--<ImageView-->
@@ -142,9 +119,52 @@
                 <!--android:id="@+id/imageView7"-->
                 <!--android:layout_width="match_parent"-->
                 <!--android:layout_height="wrap_content"-->
-                <!--android:src="@drawable/hjdzn" />-->
+                <!--android:src="@drawable/hjdzn"-->
+                <!--/>-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true">
+            <LinearLayout
+                android:id="@+id/tiezidianzan"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginBottom="0dp"
+                android:background="#c0c0c0"
+                android:layout_alignParentBottom="true"
+                >
 
+                <ImageView
+                    android:id="@+id/zan_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:src="@drawable/bheart"
+                    />
+
+                <TextView
+                    android:id="@+id/zan_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zero"/>
+
+                <ImageView
+                    android:id="@+id/shoucan_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:src="@drawable/bstar"
+                    />
+
+                <TextView
+                    android:id="@+id/shoucan_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zero"
+                    />
+            </LinearLayout>
+            </RelativeLayout>
         </LinearLayout>
-    </LinearLayout>
+
 
 </android.support.constraint.ConstraintLayout>

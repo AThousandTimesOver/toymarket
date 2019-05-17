@@ -95,7 +95,7 @@ public class Six6Fragment extends Fragment {
     //填充数据
     public List<Map<String, Object>> getData() {
         List<Map<String, Object>> list = new ArrayList<Map<String, Object>>();
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 1; i++) {
             Map<String, Object> map = new HashMap<String, Object>();
             map.put("image", R.drawable.wjx);
             map.put("ID_name", "澳贝公司");

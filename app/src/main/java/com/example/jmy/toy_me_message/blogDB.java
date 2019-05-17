@@ -158,10 +158,10 @@ public class blogDB extends SQLiteOpenHelper {
         return row;
     }
 
-    public void delete(int id) {
+    public void delete(int blogid) {
         SQLiteDatabase db = this.getWritableDatabase();
         String where = "_id = ?";
-        String[] whereValue = new String[]{Integer.toString(id)};
+        String[] whereValue = new String[]{Integer.toString(blogid)};
         db.delete("blogtable", where, whereValue);
     }
 

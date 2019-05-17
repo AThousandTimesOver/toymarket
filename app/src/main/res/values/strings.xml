@@ -15,8 +15,9 @@
     <string name="item1">快来围观啊</string>
     <string name="item2">分享好玩具了</string>
     <string name="title_activity_main2">Main2Activity</string>
-    <string name="tiezi1">今天和大家分享一下信价比较高的玩具城\n第一：Hamleys玩具城\n中国首家世界最大玩具城坐落南京市。         地址：孙中山先生雕像右手边     </string>
-    <string name="tiezi2">第二：皇家迪智尼玩具\n引入欧美四大领域玩具，德国微工坊、陶瓷搭建、3D打印笔等八大类玩具等你来玩哦</string>
+    <string name="tiezi1">今天和大家分享一下信价比较高的玩具城\n第一：Hamleys玩具城\n\t\t中国首家世界最大玩具城坐落南京市。这个百年玩具品牌去年10月正式落户中国南京，迎来自己的全新征程，用全球化发展战略的眼光和耀眼的愿景，引世人瞩目。这座高达四层，总面积近7000平方米的玩具王国将是国内单体面积最大的玩具店，也是全球最大“场景互动式”玩具店。 </string>
+    <string name="tiezi2">第二：皇家迪智尼玩具\n\t\t引入欧美四大领域玩具，德国微工坊、陶瓷搭建、3D打印笔等八大类玩具等你来玩哦</string>
+    <string name="tiezi3">今天和大家分享一下性价比较高的玩具城\n第一：Hamleys玩具城\n\t\t中国首家世界最大玩具城坐落南京市。这个百年玩具品牌已正式落户中国南京，迎来自己的全新征程，用全球化发展战略的眼光和耀眼的愿景，引世人瞩目。这座高达四层，总面积近7000平方米的玩具王国将是国内单位面积最大的玩具店，也是全球最大"场景互动式"玩具店。</string>
     <string name="title_activity_main3">Main3Activity</string>
     <string name="yhname">玩具女孩\n2018年11月28日</string>
     <string name="tiezizuozheming">玩具女孩</string>
